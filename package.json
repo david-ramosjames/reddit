@@ -1,0 +1,37 @@
+{
+  "name": "reddit-comment-scout",
+  "version": "1.0.0",
+  "description": "Internal tool: discover Reddit reply opportunities for manual review (Ramos James Law).",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "scan": "tsx src/main.ts",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "reddit",
+    "slack",
+    "openai"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7",
+    "fast-xml-parser": "^4.5.0",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
